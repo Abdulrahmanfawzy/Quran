@@ -215,8 +215,9 @@ header nav li{
     font-family: "surahname" , sans-serif;
 }
 div.surah_name{
-    font-size: 35px;
+    font-size: 23px;
     text-align: right;
+    word-spacing: 8px;
 }
 .surah_name li{
     font-size: 21px;
@@ -291,7 +292,7 @@ div.surah_name{
     .search .icon{
         width: 50px;
         font-size: 15px;
-        line-height: 50px;
+        line-height: 56px;
     }
     
     div.surah_name{
