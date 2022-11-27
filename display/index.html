@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran App</title>
+    <link rel="shortcut icon" href="../logo-hed.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        body{
+            background: #FFF;
+        }
+        .bodyImage::before{
+            background-image: linear-gradient(rgba(32,55,106,.5),rgba(32,55,106,.5)),url(../image.jpg);
+            height: 80%;
+        }
+        .edit_box{
+            margin-bottom: 80px;
+            padding: 30px 20px;
+            background: #f6faff;
+        }
+        .edit_title i{
+            color: #cfe0ff!important;
+        }
+        .edit_title li{
+            color: #426cb7!important;
+        }
+        .edit_box hr{
+            background: #cfe0ff!important;
+        }
+        .edit_box select{
+            border: 2px solid #cfe0ff;
+            color: #426cb7;
+        }
+        @media(max-width: 576px){
+            .info_flex li{
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bodyImage"></div>
+    
+    <header>
+
+        <nav class="navbar navbar-light navbar-expand-md justify-content-between">
+
+            <div class="logo ml-auto">
+                <img src="../logo-hed.png" alt="">
+            </div>
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+            
+            <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  
+                  <li class="readers_link nav-item active"><a class="nav-link" href="../index.html">الصفحة الرئيسية</a></li>
+                  <li class="readers_link nav-item"><a class="nav-link" href="../readers/index.html">القراء</a></li>
+                  <li class="readers_link nav-item"><a class="nav-link" href="../hadith/index.html">أحاديث</a></li>
+                  <li class="readers_link nav-item"><a class="nav-link" href="../athan/index.html">مواعيد الأذان</a></li>                 
+                </ul>
+                
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="info">
+            
+        </div>
+        <div class="edit_box">
+            <div class="edit_title">
+                <div>
+                    <i class="fas fa-th-list"></i>
+                    <li id="show_shape">تغير طريقة العرض</li>
+                </div>
+                <div>
+                    <i class="fas fa-search-plus"></i>
+                    <li id="increaseFont">تكبير الخط</li>
+                </div>
+                <div>
+                    <i class="fas fa-search-minus"></i>
+                    <li id="decreaseFont">تصغير الخط</li>
+                </div>
+            </div>
+            <hr>
+            <div class="">
+                <label>تحديد الآيات :</label>
+                <div class="list_flex">
+                    <li class="OrderAyah"> 
+                        <select id="select_from">
+                        </select>
+                    </li>
+                        <select id="select_to">
+                        </select>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="imager"><img width="250px" src="../basmala.png"></div>
+        <div class="content">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    
+    <div class="spinner">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <div class="overlays">
+        <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="overlay_list">
+
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #f8fcff;">
+            All rights reserved © with AbdulRahman Fawzy in 2022
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <div class="layer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

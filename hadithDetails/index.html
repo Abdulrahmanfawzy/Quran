@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran App</title>
+    <link rel="shortcut icon" href="../logo-hed.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .item{
+            width: 100%;
+            padding: 25px 20px;
+            color: #FFF;
+            font-size: 18px;
+            width: 100%;
+            display: block;
+            cursor: inherit;
+        }
+        div.surah_name{
+            word-spacing: 7px;
+            font-size: 18px;
+        }
+        .hadiths{
+            font-size: 20px;
+            margin-bottom: 20px;
+            word-spacing: 5px;
+            text-align: right;
+        }
+
+        .hadith_name{
+            text-align: center;
+            font-size: 1.7rem;
+            color: #FFF;
+            word-spacing: 4px;
+        }
+        .item span{
+            color: #DDD;
+        }
+        .words{
+            margin-top: 30px;
+            margin-bottom: 15px!important;
+        }
+
+        .surah_name li{
+            margin-bottom: -20px!important;
+        }
+        .hints{
+            margin-top: 30px;
+        }
+        .surah_name i{
+            color: #2ca4ab;
+            vertical-align: middle;
+        }
+        .surah_name h4{
+            margin-bottom: 10px;
+        }
+        .hints h4{
+            margin-bottom: 23px;
+            margin-top: 50px;
+        }
+        .hints p{
+            margin-bottom: -20px;
+        }
+        .hints p:last-child{
+            margin-bottom: 15px;
+        }
+        .surah_name article li{
+            margin-bottom: 0px!important;
+        }
+        
+        @media(max-width: 576px){
+            .hadiths{
+                font-size: 15px;
+            }
+            .surah_name h4{
+                font-size: 18px!important;
+            }
+            .surah_name p {
+                font-size: 14px;
+                word-spacing: 2px;
+            }
+            .surah_name li{
+                font-size: 15px;
+            }
+            .surah_name h4 {
+                margin-bottom: 15px;
+            }
+            .item{
+                padding: 15px 11px;
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bodyImage"></div>
+    <header>
+
+        <nav class="navbar navbar-light navbar-expand-md justify-content-between">
+
+            <div class="logo ml-auto">
+                <img src="../logo-hed.png" alt="">
+            </div>
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+            
+            <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  
+                  <li class="readers_link nav-item active"><a class="nav-link" href="../index.html">الصفحة الرئيسية</a></li>
+                  <li class="readers_link nav-item"><a class="nav-link" href="../readers/index.html">القراء</a></li>
+                  <li class="readers_link nav-item"><a class="nav-link" href="../hadith/index.html">أحاديث</a></li>
+                  <li class="readers_link nav-item"><a class="nav-link" href="../athan/index.html">مواعيد الأذان</a></li>                 
+                </ul>
+                
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <!-- <h2 class="hadith_name"></h2> -->
+        <div class="item_flex">
+            
+        </div>
+        
+    </div>
+
+    <div class="spinner">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+    
+    <div class="footer_div"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
